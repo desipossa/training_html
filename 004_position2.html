@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>004 position2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1200px;
+            margin: 0 auto;
+            height: 100px;
+        }
+
+        nav>ul {
+            display: flex;
+        }
+
+        nav>ul>li {
+            position: relative;
+        }
+
+        nav>ul>li>a {
+            display: block;
+            line-height: 40px;
+
+            padding: 0 40px;
+        }
+
+        nav>ul>li:hover>a {
+            background: #333;
+            color: #fff;
+        }
+
+        nav>ul>li ul {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 0;
+
+            width: 100%;
+            background: #fff;
+        }
+
+        nav:hover>ul>li ul {
+            display: block;
+        }
+
+        nav>ul ul a {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        nav>ul ul a:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        main {
+            background: #333;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="hd">
+        <div class="inner">
+            <h1>LOGO</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">menu01</a>
+                        <ul>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">menu02</a>
+                        <ul>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">menu03</a>
+                        <ul>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">menu04</a>
+                        <ul>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                            <li><a href="">smenu01</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        slide
+    </main>
+</body>
+
+</html>

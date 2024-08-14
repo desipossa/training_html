@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001 box</title>
+    <style>
+        #box {
+            background: red;
+        }
+
+        .box2 {
+            background: green;
+            padding: 0 0 0 100px;
+
+            /* border-width: 4px;
+            border-style: solid;
+            border-color: red; */
+
+            border: 4px solid red;
+
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 500px;
+            background: yellowgreen;
+            margin-bottom: 18px;
+        }
+
+        div {
+            background: black;
+        }
+
+
+
+
+        span {
+            background: tomato;
+        }
+
+        .inline {
+            width: 500px;
+            height: 100px;
+            margin-top: 400px;
+            margin-right: 100px;
+            padding-left: 100px;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">block 01</div>
+    <div class="box box2">block 02</div>
+    <div id="box" class="box box3">block 03</div>
+    <span class="inline inline1">span 01</span>
+    <span class="inline inline2">span 02</span>
+</body>
+
+</html>
